@@ -60,3 +60,20 @@
   transform: scale(1.2);
   transition: 0.2s;
 }
+
+
+.lobotomy-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lobotomy-buttons {
+  display: flex;
+  flex-wrap: nowrap; /* evita que Ionic los baje a otra fila */
+}
+
+.lobotomy-button {
+  --padding-start: 8px;
+  --padding-end: 8px;
+}

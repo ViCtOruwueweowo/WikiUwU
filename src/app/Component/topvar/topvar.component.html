@@ -1,32 +1,18 @@
 <ion-header>
-  <ion-toolbar class="lobotomy-toolbar">
-    <ion-title class="lobotomy-title">UwU</ion-title>
+<ion-toolbar class="lobotomy-toolbar">
+  <ion-title class="lobotomy-title">UwU</ion-title>
+  
+  <ion-buttons slot="end" class="lobotomy-buttons">
+    <ion-button routerLink="/home">
+      <ion-icon name="home-outline"></ion-icon>
+      <span class="label">Inicio</span>
+    </ion-button>
+    <ion-button routerLink="/login">
+      <ion-icon name="log-in-outline"></ion-icon>
+      <span class="label">Iniciar</span>
+    </ion-button>
+    <!-- demás botones -->
+  </ion-buttons>
+</ion-toolbar>
 
-    <ion-buttons slot="end">
-      <ion-button routerLink="/home" class="lobotomy-button">
-        <ion-icon name="home-outline" class="icon"></ion-icon>
-        <span class="label">Inicio</span>
-      </ion-button>
-
-      <ion-button routerLink="/login" class="lobotomy-button">
-        <ion-icon name="log-in-outline" class="icon"></ion-icon>
-        <span class="label">Iniciar</span>
-      </ion-button>
-
-      <ion-button routerLink="/wikis" class="lobotomy-button">
-        <ion-icon name="book-outline" class="icon"></ion-icon>
-        <span class="label">Wikis</span>
-      </ion-button>
-
-      <ion-button routerLink="/favorites" class="lobotomy-button">
-        <ion-icon name="heart-outline" class="icon"></ion-icon>
-        <span class="label">Favoritos</span>
-      </ion-button>
-
-      <ion-button routerLink="/profile" class="lobotomy-button">
-        <ion-icon name="person-outline" class="icon"></ion-icon>
-        <span class="label">Yo</span>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
 </ion-header>

@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-topvar',
   templateUrl: './topvar.component.html',
-  styleUrls: ['./topvar.component.scss'],
+  styleUrls: ['assets/topvar.component.scss'],
     standalone: true,
   imports: [CommonModule,  IonicModule,RouterModule] // <-- solo módulos
 
