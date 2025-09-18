@@ -6,7 +6,7 @@ import { routes } from './app/app.routes';
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideIonicAngular(),
+    provideIonicAngular({ mode: 'md' }),
     provideRouter(routes, withPreloading(PreloadAllModules)),
   ],
 });
