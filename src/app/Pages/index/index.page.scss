@@ -1,41 +1,47 @@
+/* Títulos responsivos */
 .lobotomy-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   color: #d43c3c;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 10px;
 }
 
+/* Texto general responsivo */
 .lobotomy-text {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
-  color: #f0f0f0; /* Texto claro */
+  color: #f0f0f0;
   letter-spacing: 0.5px;
   margin-bottom: 12px;
-  text-align: justify; /* estilo de texto narrativo */
+  text-align: justify;
 }
 
 .lobotomy-text-highlight {
-  color: #d43c3c; /* resalta palabras clave en rojo */
+  color: #d43c3c;
   font-weight: bold;
 }
-
-
 ion-card {
   background-color: rgba(28,28,28,0.95);
   border: 2px solid #d43c3c;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(212,60,60,0.5);
   transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden; /* evita que imágenes salgan del card */
+}
+
+ion-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* mantiene proporción */
 }
 
 ion-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(212,60,60,0.7);
 }
-
 ion-searchbar {
   --background: #1c1c1c;
   --color: #f0f0f0;
@@ -44,6 +50,31 @@ ion-searchbar {
 }
 
 .lobotomy-background {
-  --background: #1c1c1c; /* Fondo oscuro */
+  --background: #1c1c1c;
+  padding: 10px;
+}
+/* Móviles pequeños */
+@media (max-width: 767px) {
+  .lobotomy-title {
+    font-size: 18px; /* títulos más pequeños */
+  }
 
+  .lobotomy-text {
+    font-size: 14px; /* texto más compacto */
+  }
+
+  ion-card {
+    margin-bottom: 15px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .lobotomy-title {
+    font-size: 20px;
+  }
+
+  .lobotomy-text {
+    font-size: 15px;
+  }
 }

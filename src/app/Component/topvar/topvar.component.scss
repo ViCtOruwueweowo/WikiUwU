@@ -75,5 +75,23 @@
 
 .lobotomy-button {
   --padding-start: 8px;
+   --color: #d43c3c;
   --padding-end: 8px;
+}
+
+/* Ocultar texto en móvil */
+@media (max-width: 767px) {
+  .lobotomy-button .label {
+    display: none;
+  }
+}
+
+/* Ocultar íconos en desktop */
+@media (min-width: 768px) {
+  .lobotomy-button .icon {
+    display: none;
+  }
+  .lobotomy-button .label {
+    display: inline-block;
+  }
 }
