@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar class="lobotomy-toolbar">
+    <ion-title class="lobotomy-title">UwU</ion-title>
+
+    <ion-buttons slot="end">
+      <!-- Inicio -->
+      <ion-button routerLink="/home" class="lobotomy-button">
+        <ion-icon name="home-outline" class="mobile-only"></ion-icon>
+        <span class="desktop-only">Inicio</span>
+      </ion-button>
+
+      <!-- Iniciar -->
+      <ion-button routerLink="/login" class="lobotomy-button">
+        <ion-icon name="log-in-outline" class="mobile-only"></ion-icon>
+        <span class="desktop-only">Iniciar</span>
+      </ion-button>
+
+      <!-- Wikis -->
+      <ion-button routerLink="/wikis" class="lobotomy-button">
+        <ion-icon name="book-outline" class="mobile-only"></ion-icon>
+        <span class="desktop-only">Wikis</span>
+      </ion-button>
+
+      <!-- Favoritos -->
+      <ion-button routerLink="/favorites" class="lobotomy-button">
+        <ion-icon name="heart-outline" class="mobile-only"></ion-icon>
+        <span class="desktop-only">Favoritos</span>
+      </ion-button>
+
+      <!-- Yo / Perfil -->
+      <ion-button routerLink="/profile" class="lobotomy-button">
+        <ion-icon name="person-outline" class="mobile-only"></ion-icon>
+        <span class="desktop-only">Yo</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contenido principal -->
+<ion-content fullscreen class="login-background">
+  <ng-content></ng-content>
+</ion-content>

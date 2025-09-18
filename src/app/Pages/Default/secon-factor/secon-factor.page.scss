@@ -1,0 +1,81 @@
+
+/* Fondo oscuro estilo Lobotomy Corp */
+.login-background {
+  --background: #1c1c1c;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Contenedor absoluto centrado */
+.login-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfecto centrado vertical y horizontal */
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Card estilo Lobotomy Corp */
+.lobotomy-card {
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.95);
+  border: 2px solid #d43c3c;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(212, 60, 60, 0.5);
+}
+
+/* Título estilo Lobotomy Corp */
+.lobotomy-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  color: #d43c3c;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Inputs estilo Lobotomy */
+.lobotomy-item {
+  --highlight-color-focused: #d43c3c;
+  margin-bottom: 15px;
+}
+
+.lobotomy-label {
+  color: #d43c3c;
+}
+
+.lobotomy-input {
+  text-align: center;
+  color: #d43c3c; 
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Botón estilo Lobotomy */
+.lobotomy-button {
+  --background: #d43c3c;
+  --color: #ffffff;
+  border-radius: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 0;
+}
+
+/* Link rojo */
+.lobotomy-link {
+  color: #d43c3c;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.lobotomy-link:hover {
+  text-decoration: underline;
+}
+

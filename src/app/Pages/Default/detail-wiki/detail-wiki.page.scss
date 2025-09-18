@@ -1,0 +1,68 @@
+.lobotomy-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    color: #d43c3c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.lobotomy-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* izquierda imagen - derecha info */
+    gap: 20px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .lobotomy-detail-container {
+        grid-template-columns: 1fr;
+        /* una sola columna */
+    }
+
+    .lobotomy-image {
+        margin-bottom: 15px;
+    }
+}
+
+.lobotomy-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    /* Texto claro */
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: justify;
+    /* estilo de texto narrativo */
+}
+
+.lobotomy-text-highlight {
+    color: #d43c3c;
+    /* resalta palabras clave en rojo */
+    font-weight: bold;
+}
+
+
+ion-card {
+    background-color: rgba(28, 28, 28, 0.95);
+    border: 2px solid #d43c3c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(212, 60, 60, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+ion-searchbar {
+    --background: #1c1c1c;
+    --color: #f0f0f0;
+    --placeholder-color: #d43c3c;
+    margin-bottom: 20px;
+}
+
+.lobotomy-background {
+    --background: #1c1c1c;
+    /* Fondo oscuro */
+
+}

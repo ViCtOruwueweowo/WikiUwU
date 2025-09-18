@@ -1,13 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { WikisPage } from './wikis.page';
 
-import { HomePage } from './home.page';
+describe('WikisPage', () => {
+  let component: WikisPage;
+  let fixture: ComponentFixture<WikisPage>;
 
-describe('HomePage', () => {
-  let component: HomePage;
-  let fixture: ComponentFixture<HomePage>;
-
-  beforeEach(async () => {
-    fixture = TestBed.createComponent(HomePage);
+  beforeEach(() => {
+    fixture = TestBed.createComponent(WikisPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

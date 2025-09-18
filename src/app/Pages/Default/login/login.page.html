@@ -1,0 +1,28 @@
+
+<ion-content fullscreen class="login-background" scroll-y="false">
+  <div class="login-wrapper">
+    <ion-card class="lobotomy-card">
+      <ion-card-header>
+        <ion-card-title class="lobotomy-title ion-text-center">Iniciar Sesión</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item class="lobotomy-item">
+          <ion-label position="floating" class="lobotomy-label">Correo electrónico</ion-label>
+          <ion-input type="email" class="lobotomy-input"></ion-input>
+        </ion-item>
+
+        <ion-item class="lobotomy-item">
+          <ion-label position="floating" class="lobotomy-label">Contraseña</ion-label>
+          <ion-input type="password" class="lobotomy-input"></ion-input>
+        </ion-item>
+
+        <ion-button routerLink="/second-factor" expand="block" class="lobotomy-button ion-margin-top">Ingresar</ion-button>
+
+        <ion-text class="ion-text-center ion-margin-top">
+          <a routerLink="/register" class="lobotomy-link">Registrarse</a>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
