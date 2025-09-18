@@ -1,4 +1,4 @@
-/* TopBar oscuro estilo Lobotomy Corp */
+/* TopBar oscuro */
 .lobotomy-toolbar {
   --background: #1c1c1c;
   border-bottom: 2px solid #d43c3c;
@@ -21,8 +21,32 @@
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  padding: 0 12px;       /* evita que el texto se corte */
-  white-space: nowrap;    /* fuerza a que el texto no se divida */
+  justify-content: center;
+  padding: 0 8px;
+  white-space: nowrap;
+  min-width: 50px;
+}
+
+/* Iconos y texto */
+.lobotomy-button .icon {
+  font-size: 22px;
+  margin-right: 6px; /* espacio entre icono y texto */
+}
+
+/* Media query para mostrar solo iconos en móvil y texto en desktop */
+@media (max-width: 767px) {
+  .lobotomy-button .label {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .lobotomy-button .icon {
+    display: none;
+  }
+  .lobotomy-button .label {
+    display: inline-block;
+  }
 }
 
 /* Hover de botones */
@@ -31,30 +55,8 @@
   border-radius: 5px;
 }
 
-/* Iconos visibles solo en móvil */
-.mobile-only {
-  display: inline-block;
-  font-size: 22px; /* tamaño iconos */
-}
-
-/* Texto visible solo en desktop */
-.desktop-only {
-  display: none;
-}
-
-/* Media query para mostrar texto en desktop y ocultar iconos */
-@media (min-width: 768px) {
-  .mobile-only {
-    display: none;
-  }
-  .desktop-only {
-    display: inline-block;
-  }
-}
-
-/* Hover iconos en móvil */
-.lobotomy-button .mobile-only:hover {
-  color: #d43c3c;
+/* Hover iconos */
+.lobotomy-button .icon:hover {
   transform: scale(1.2);
   transition: 0.2s;
 }
